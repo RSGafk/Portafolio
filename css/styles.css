@@ -1,0 +1,255 @@
+/*
+    RESET Y CONFIGURACIÓN GENERAL
+*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/*  ESTILOS GENERALES  */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f8f9fb;
+    color: #333;
+    line-height: 1.6;
+}
+
+main {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+h2 {
+    color: #004aad;
+    border-left: 5px solid #004aad;
+    padding-left: 10px;
+}
+
+/* SECCIONES */
+section, .seccion {
+    background: #fff;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* LISTAS */
+ul, ol {
+    margin-left: 1.3rem;
+    margin-top: 0.8rem;
+}
+
+ul li, ol li {
+    margin-bottom: 0.5rem;
+}
+
+/* ENLACES */
+a {
+    color: #004aad;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #1a73e8;
+    text-decoration: underline;
+}
+
+/* FOOTER GENERAL */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #192a56;
+    color: #fff;
+    margin-top: 2rem;
+}
+
+
+
+/*
+    index.html
+*/
+.global {
+    background-color: #273c75;
+    color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.global h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+/* Navegación */
+.global nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.global nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.global nav a:hover {
+    color: #00a8ff;
+}
+
+/* SECCIONES INDEX */
+.seccion ul {
+    margin-left: 1.3rem;
+    margin-top: 0.8rem;
+}
+
+.seccion ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* PROYECTOS */
+.proyectos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.proyecto {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.proyecto:hover {
+    transform: translateY(-5px);
+}
+
+.proyecto a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #273c75;
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.proyecto a:hover {
+    background-color: #40739e;
+}
+
+
+
+/*
+    sgi.html
+*/
+.header-proyecto {
+    background-color: #273c75;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.header-proyecto h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+/* TECNOLOGÍAS */
+.tecnologias {
+    display: flex;
+    gap: 15px;
+    margin: 10px 0;
+}
+
+.tecnologias img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
+}
+
+.tecnologias img:hover {
+    transform: scale(1.2);
+}
+
+/* GALERÍA */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 15px;
+    margin-top: 1rem;
+}
+
+.galeria img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.galeria img:hover {
+    transform: scale(1.5);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/*
+sobreMi.html
+*/
+.header-sobre-mi {
+    background-color: #273c75;
+    color: #fff;
+    padding: 1.5rem 2rem;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-sobre-mi img {
+    width: 70px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+}
+
+/* LOGOS TECNOLOGÍAS SOBRE MÍ */
+.logos-tecnologias {
+    display: flex;
+    gap: 15px;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+.logos-tecnologias img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s;
+}
+
+.logos-tecnologias img:hover {
+    transform: scale(1.2);
+}
+
+/*
+responsive styles
+*/
+@media(max-width: 630px) {
+    .off{
+        display: none;
+    }
+}

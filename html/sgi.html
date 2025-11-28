@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistema de Gestión de Inventario (SGI)</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+</head>
+
+<body>
+    <header class="header-proyecto">
+        <h1>Sistema de Gestión de Inventario "SGI"</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Descripción del proyecto</h2>
+            <p>Software de escritorio creado para la empresa <strong>Red de Energía e Infraestructura ROCA S.A. de C.V.</strong><br>El Sistema de Gestión de Inventario (SGI) es una aplicación portable para escritorio conectada a una base de datos local, desarrollada para gestionar y controlar entradas y salidas de inventario en la empresa. Además de generar reportes de movimientos en ciertas fechas, reportes del estado actual del inventario y un control de accesos para usuarios(administrador/usuario). </p>
+        </section>
+
+        <section>
+            <h2>Tecnologías y herramientas</h2>
+            <div class="tecnologias">
+                <img src="/img/csharp.png" alt="Logo C#" title="C#" />
+                <img src="/img/vs.png" alt="Visual Studio" title="Visual Studio 2022" />
+                <img src="/img/xampp.png" alt="XAMPP" title="MySQL / XAMPP" />
+            </div>
+            <p>
+                <strong>Lenguaje:</strong> C# <br />
+                <strong>IDE:</strong> Visual Studio 2022 <br />
+                <strong>Base de datos:</strong> MySQL (vía XAMPP) <br />
+                <strong>Entorno:</strong> Windows Forms (.NET Framework)
+            </p>
+        </section>
+
+        <section>
+            <h2>Proceso de desarrollo</h2>
+            Se utilizo la metodología tradicional en <strong>cascada</strong>, debido a que los requisitos del proyecto serian definidos al inicio en una reunión y no habría cambios posteriores ya que la aplicación seria utilizada internamente en la empresa.<br>La metodología en cascada se dividió en las siguientes fases:</p>
+            <ol>
+                <li>Análisis: Durante esta fase se tuvo una reunión con el cliente para definir cada uno de los requisitos y funcionamientos que debería tener el sistema así como la problemática que se buscaba resolver con el desarrollo del software.</li>
+                <li>Diseño: En base a los requisitos obtenidos durante el análisis se diseñó la estructura del software comenzando por la base de datos la cual incluye el modelo entidad-relación, el modelo relacional y el diccionario de datos. Posteriormente se diseñaron las interfaces graficas del sistema así como los formatos para los reportes que se generarían.</li>
+                <li>Programación: En esta fase se llevó a cabo la codificación del sistema utilizando C# en Visual Studio 2022. Se utilizo Windows Forms para la creación de las Interfaces gráficas y MySQL para la gestión de la base de datos. <br> Haciendo uso de la programación orientada a objetos se realizó la integración de la lógica para agregar, eliminar, modificar y consultar (CRUD) los datos(productos, usuarios, movimientos) en la base de datos. <br> Finalmente se implementaron las funcionalidades para la generación de reportes en formato PDF utilizando la librería iTextSharp.</li>
+                <li>Pruebas: Una vez finalizada la etapa de programación se realizaron pruebas unitarias con la ayuda de MSTest para verificar que cada módulo del sistema funcionara correctamente. De igual manera se llevaron a cabo pruebas de funcionalidad y usabilidad (pruebas manuales) para asegurar que el sistema cumpliera con los requisitos establecidos en la fase de análisis. <br> Para finalizar se realizaron pruebas de estrés donde se insertaron grandes cantidades de datos en la base de datos para evaluar el rendimiento del sistema bajo condiciones extremas.</li>
+                <li>Implementación: Después de completar las pruebas y corregir cualquier error encontrado, se procedió a la implementación del sistema en un entorno local dentro de la empresa. Se realizó la instalación del software en el equipo designado y se configuro la base de datos MySQL utilizando XAMPP para su correcto funcionamiento, para evitar perder datos se implementaron copias de seguridad de la base de datos al cerrar la aplicación de igual manera el respaldo se guardaba en una carpeta conectada a OneDrive para mayor seguridad. <br> Se proporcionó capacitación a los usuarios finales para asegurar un uso adecuado del sistema y se entregó un manual de usuario y un documento con recomendaciones para que el software funcionara de manera óptima.</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Demostración</h2>
+            <div class="galeria">
+                <img src="/img/CapSGI/inicioSesion.png" alt="Inicio de Sesión SGI" />
+                <img src="/img/CapSGI/menuAdmin.png" alt="Menú Administrador SGI" />
+                <img src="/img/CapSGI/MenuUsuario.png" alt="Menú Usuario SGI" />
+                <img src="/img/CapSGI/capturaObra.png" alt="Gestión de Obras" />
+                <img src="/img/CapSGI/capturaPersonal.png" alt="Gestión de Personal" />
+                <img src="/img/CapSGI/capturaProducto.png" alt="Gestión de Productos" />
+                <img src="/img/CapSGI/FormReportes.png" alt="Reportes SGI" />
+            </div>
+        </section>
+
+        <section>
+            <h2>Rol y logros</h2>
+            <p>
+                Proyecto desarrollado de forma individual, participando en todas las
+                fases desde el análisis hasta la implementación. Principales logros:
+            </p>
+            <ul>
+                <li>
+                    Planificación estructurada del desarrollo (metodología en cascada)
+                </li>
+                <li>Mejora en programación con C# y diseño de bases de datos</li>
+                <li>Implementación de pruebas unitarias y de estrés</li>
+                <li>Comunicación efectiva con el cliente</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Documentación y presentación</h2>
+            <ul>
+                <li>
+                    <a href="https://1drv.ms/v/c/f069d4f84b295419/Ed22g_2hrUFJqr1ckAtU5wsBZadxEiIC-LgFAs3wjnGcJA?e=2nsInC"
+                        target="_blank">🎬 Demostración en video</a>
+                </li>
+                <li>
+                    <a href="https://1drv.ms/b/c/f069d4f84b295419/EQcFyP8dnFxKqkqEJFcMpHwBbP0Rr9DBcNIvh-REgzLzyQ?e=L51nj1"
+                        target="_blank">📘 Manual de usuario</a>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Rubén Sánchez | Todos los derechos reservados</p>
+    </footer>
+</body>
+
+</html>
