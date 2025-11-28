@@ -1,0 +1,38 @@
+# ===== SISTEMA OPERATIVO =====
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# ===== EDITORES =====
+# Visual Studio Code
+.vscode/
+
+# JetBrains (WebStorm, etc.)
+.idea/
+
+# Archivos de configuración temporales
+*.tmp
+*.temp
+
+# ===== LOGS =====
+*.log
+
+# ===== ARCHIVOS DE PRUEBA =====
+*.bak
+*.old
+
+# ===== NODE (por si un día agregas npm para tailwind o herramientas) =====
+node_modules/
+
+# ===== AMBIENTES VIRTUALES (por si algún día usas python scripts) =====
+venv/
+.venv/
+
+# ===== CARPETAS QUE NO QUIERES SUBIR =====
+dist/
+build/
+
+# ===== OTROS =====
+.env
