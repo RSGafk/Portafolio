@@ -14,7 +14,7 @@ const proyectos = [
     titulo: "Sistema de Gestión de Inventario (SGI)",
     descripcion: "Aplicación para controlar materiales, entradas y salidas en almacén, con reportes automáticos.",
     tecnologias: ["MySQL", "C#", "Windows Forms."],
-    link: "/html/sgi.html"
+    link: "html/sgi.html"
 },
 {
 //esapcio para agregar otro proyecto
