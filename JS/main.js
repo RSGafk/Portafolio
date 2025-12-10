@@ -16,12 +16,12 @@ const proyectos = [
     tecnologias: ["MySQL", "C#", "Windows Forms."],
     link: "html/sgi.html"
 },
-{
-//esapcio para agregar otro proyecto
+/*{
+//espacio para agregar otro proyecto
 },
 {
 //espacio para agregar otro proyecto
-}
+}*/
 ];
 
 // 2. Obtenemos el contenedor donde se mostrarán los proyectos
@@ -43,4 +43,22 @@ card.innerHTML = `
 
   // Agregamos la tarjeta al contenedor
 contenedor.appendChild(card);
+});
+
+//Animaciones con Intersection Observer
+
+const elementosAnimar = document.querySelectorAll(".animar");
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+        }
+    });
+}, {
+    rootMargin: "0px 0px -20% 0px" // Se activa 20% antes
+});
+elementosAnimar.forEach(elemento => {
+    observer.observe(elemento);
 });
