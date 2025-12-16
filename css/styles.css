@@ -68,6 +68,17 @@ footer {
     margin-top: 2rem;
 }
 
+.animar{
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    will-change: opacity, transform; /* mejora rendimiento */
+}
+.visible{
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+}
 
 
 /*
@@ -200,7 +211,7 @@ footer {
 }
 
 .galeria img:hover {
-    transform: scale(1.5);
+    transform: scale(1.3);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -251,5 +262,12 @@ responsive styles
 @media(max-width: 630px) {
     .off{
         display: none;
+    }
+    /*Desactivar todos los efectos hover*/
+    *:hover{
+        transform: none !important;
+        box-shadow: none !important;
+        background-color: initial !important;
+        color: initial !important;
     }
 }
